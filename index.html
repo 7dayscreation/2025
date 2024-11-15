@@ -17,9 +17,7 @@
     <link rel="preload" href="fonts/kinsey.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
 	<meta name="google-site-verification" content="j2JfPXxCa4t3FSikKaKqTyMMMrADdrsgM0CQsmZYm3Y" />
-	<!-- For Heart Like Button -->
-	<link rel="stylesheet" type="text/css" href="like.css"/>
-	<!-- For Heart Like Button End -->
+	
     <!-- Google Fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300;1,400;1,500&amp;display=swap"/>
     <!-- Template Vendor's Stylesheet -->
@@ -109,17 +107,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div></a>
             </div>
             <!-- - logo -->
-			<div class="col-auto header__col d-flex align-items-center">
-              <div class="ms-auto header__burger" data-arts-cursor-scale="1.7" >
-                <!-- Social Media -->
-                <div class="placement">
-					<div class="heart" id="likeButton" onclick="like()"></div>
-				</div>
-				<div class="placenumber">
-					<span class="pnumber" id="likeCount">0</span>
-				</div>
-				<!-- Social Media -->
-			  </div>
+	    <div class="col-auto header__col d-flex align-items-center">
+              	<div class="ms-auto header__burger" data-arts-cursor-scale="1.7" >
+        	</div>
             </div>
             <!-- burger icon -->
             <div class="col-auto header__col d-flex align-items-center">
@@ -1320,15 +1310,5 @@ document.onkeydown=function(e){
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="script.js"></script>
-<script>
-    // Fetch the initial like count from the server
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById('likeCount').innerText = this.responseText;
-        }
-    };
-    xhr.open("GET", "getLikes.php", true);
-    xhr.send();
-</script>	<!-- Footer End -->  
-  </body>
+	<!-- Footer End -->  
+</body>
