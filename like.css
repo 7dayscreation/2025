@@ -1,0 +1,70 @@
+/* Heart Button */
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+}
+
+.heart.is-active {
+    background-position: -2800px 0;
+    transition-duration: 1s;
+}
+
+/* Placement of Heart Button and Like Count */
+.placement {
+    position: fixed;
+    top: 16%;
+    right: 1.7%;
+    transform: translate(-50%, -50%);
+}
+.placenumber {
+    position: fixed;
+    top: 20%;
+    right: 6.2%;
+	font-size: 12px;
+    transform: translate(-50%, -50%);
+}
+.pnumber {
+    width: 100px;
+    height: 100px;
+}
+
+.likecount {
+    position: fixed;
+    top: 15%;
+    right: 2%;
+	font-size: 10px;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    .placement {
+        position: absolute;
+        top: 45%;
+        left: -15%;
+        transform: translate(-50%, -50%);
+    }
+	.placenumber {
+    position: fixed;
+    top: 4.5%;
+    right: 38%;
+	font-size: 12px;
+    transform: translate(-50%, -50%);
+	}
+	.pnumber {
+    width: 100px;
+    height: 100px;
+	}
+    .likecount {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        color: #fff;
+    }
+}
